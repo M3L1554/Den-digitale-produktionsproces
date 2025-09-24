@@ -5,15 +5,15 @@
     <title>Side</title>
     <meta name="description" content="" />
     <style>
-      .h1 {
+      h1 {
         font-size: 42px;
         font-weight: 800;
       }
-      .h2 {
+      h2 {
         font-size: 32px;
         font-weight: 700;
       }
-      .h3 {
+      h3 {
         font-size: 26px;
         font-weight: 700;
       }
@@ -21,93 +21,95 @@
         font-size: 12px;
         color: #666;
       }
-      .box {
+      section {
         padding: 16px;
         border: 1px solid #ddd;
         margin: 12px 0;
       }
+      img {
+        max-width: 100px;
+      }
     </style>
   </head>
   <body>
-    <div class="box">
-      <div class="h3">Kontakt os nu!</div>
-      <div>
-        Læs mere <a href="#">her</a> om alt det vigtige (BEVIDST: "her"-link
-        uden beskrivende tekst).
-      </div>
-    </div>
+    <header>
+      <h3>Kontakt os nu!</h3>
+      <p>
+        <a href="#">Læs mere her</a> om alt det vigtige.
+      </p>
+    </header>
 
-    <div class="h1">Semantik og SEO i digitalt workflow</div>
-    <div class="h1">Hvorfor er det vigtigt? (Anden H1 – BEVIDST FEJL)</div>
+    <h1>Semantik og SEO i digitalt workflow</h1>
+    <h2>Hvorfor er det vigtigt?</h2>
 
-    <div class="box">
-      <div class="h3">Baggrund</div>
-      <div class="h2">
+    <section>
+      <h3>Baggrund</h3>
+      <h2>
         Dette burde måske være et underafsnit, men er større end ovenfor
-      </div>
-      <div>
+      </h2>
+      <p>
         I webproduktion handler semantik om at bruge de rigtige elementer til
         indholdet.
         <b>SEO</b> hjælper søgemaskiner med at forstå siden, men her bruger vi
         <i>kun divs</i>
         og forkerte pseudo-overskrifter.
-      </div>
-    </div>
+      </p>
+    </section>
 
-    <div class="box">
-      <div class="h2">Typiske aspekter (burde være under hovedemnet)</div>
-      <div>• Kun én hovedoverskrift pr. side (H1)</div>
-      <div>• Logisk rækkefølge af H2 → H3 → H4</div>
-      <div>• Meningsfulde filnavne og alt-tekster</div>
-      <div>• Korrekt billedformat (WebP/AVIF/JPEG)</div>
-      <div class="small">
+    <section>
+      <h2>Typiske aspekter (burde være under hovedemnet)</h2>
+      <li>• Kun én hovedoverskrift pr. side (H1)</li>
+      <li>• Logisk rækkefølge af H2 → H3 → H4</li>
+      <li>• Meningsfulde filnavne og alt-tekster</li>
+      <li>• Korrekt billedformat (WebP/AVIF/JPEG)</li>
+      <p class="small">
         (Her er punkterne korrekte, men strukturen er forkert.)
-      </div>
-    </div>
+      </p>
+    </section>
 
-    <div class="box">
-      <div class="h3">Eksempler på billeder (med fejl)</div>
+    <section>
+      <h3>Eksempler på billeder (med fejl)</h3>
 
-      <div>
-        <img src="images/billede1.jpg" />
-      </div>
+      <article>
+        <img src="/autum-leaf.jpg" alt="one pretty autum leaf laying on the forest floor between less pretty autum leaves" />
+      </article>
 
-      <div>
-        <img src="assets/billede2.png" alt="" />
-      </div>
+      <article>
+        <img src="/grey-cat.jpg" alt="a grey cat in a basked" />
+      </article>
 
-      <div>
-        <img src="9266941.jpg" alt="billede3" />
-      </div>
+      <article>
+        <img src="/pretty-building.jpg" alt="building with a rusted copper roof" />
+      </article>
 
-      <div>
-        <img src="media/BILLEDE4.JPG" title="billede4" />
-      </div>
-    </div>
+      <article>
+        <img src="/traveling-illustration.png" title="traveling illustration with luggage and a travel point" />
+      </article>
+    </section>
 
-    <div class="box">
-      <div class="h3">
+    <section>
+      <h3>
         Yderligere information (burde være underordnet ovenfor)
-      </div>
-      <div>
+      </h3>
+      <p>
         Husk at søgemaskiner læser struktur, overskrifter og alternative
         tekster. Denne side er <b>med vilje</b> ikke tilgængelighedsvenlig,
         semantisk eller SEO-klar.
-      </div>
-    </div>
+      </p>
+    </section>
 
-    <div class="box">
-      <div class="h2">Konklusion (burde være H2 under én korrekt H1)</div>
-      <div>
+    <section>
+      <h2>Konklusion (burde være H2 under én korrekt H1)</h2>
+      <p>
         Opgave: omskriv hele siden til korrekt semantisk HTML. Brug rigtige
         <strong>h1–h6</strong>, meningsfulde alt-tekster, passende
         billedformater, korrekt metadata, sprog og beskrivende links.
-      </div>
-    </div>
+      </p>
+    </section>
 
-    <div id="footer" class="small">
+    <footer class="small">
       © 2025 – Skolen. Alle rettigheder forbeholdes. (Ingen relevante links
       eller structured data)
-    </div>
+    </footer>
   </body>
 </html>
